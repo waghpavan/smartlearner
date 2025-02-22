@@ -1,0 +1,167 @@
+[
+    {
+        "topic": "Introduction to C++",
+        "question": "Which of the following is NOT a characteristic of C++?",
+        "options": [
+            "C++ supports both procedural and object-oriented programming.",
+            "C++ uses automatic garbage collection.",
+            "C++ provides low-level memory manipulation.",
+            "C++ is a statically typed language."
+        ],
+        "answer": "C++ uses automatic garbage collection."
+    },
+    {
+        "topic": "Variables and Data Types",
+        "question": "What will be the output of the following code?\n\nint x = 5 / 2;\nstd::cout << x;",
+        "options": [
+            "2.5",
+            "2",
+            "3",
+            "Error"
+        ],
+        "answer": "2"
+    },
+    {
+        "topic": "Operators and Expressions",
+        "question": "Which of the following operators cannot be overloaded in C++?",
+        "options": [
+            "+",
+            "*",
+            "::",
+            "=="
+        ],
+        "answer": "::"
+    },
+    {
+        "topic": "Control Flow (if, else, for, while)",
+        "question": "What will be the output of the following code?\n\nint x = 3;\nwhile (x > 0)\n{\n    x--;\n    std::cout << x << ' ';\n}",
+        "options": [
+            "2 1 0",
+            "3 2 1",
+            "2 1 0 -1",
+            "Error"
+        ],
+        "answer": "2 1 0"
+    },
+    {
+        "topic": "Functions",
+        "question": "Which of the following is true about function overloading in C++?",
+        "options": [
+            "Functions cannot be overloaded.",
+            "Functions with the same name must have different return types.",
+            "Functions with the same name must have different parameter types.",
+            "Function overloading is not supported in C++."
+        ],
+        "answer": "Functions with the same name must have different parameter types."
+    },
+    {
+        "topic": "Arrays and Pointers",
+        "question": "What will the following code print?\n\nint arr[] = {1, 2, 3};\nstd::cout << *(arr + 1);",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "Error"
+        ],
+        "answer": "2"
+    },
+    {
+        "topic": "Strings",
+        "question": "Which of the following is the correct way to declare a string in C++?",
+        "options": [
+            "string str = 'hello';",
+            "char str[] = 'hello';",
+            "std::string str = \"hello\";",
+            "String str = \"hello\";"
+        ],
+        "answer": "std::string str = \"hello\";"
+    },
+    {
+        "topic": "Object-Oriented Programming",
+        "question": "Which of the following is NOT a feature of C++'s object-oriented programming?",
+        "options": [
+            "Encapsulation",
+            "Polymorphism",
+            "Multiple inheritance",
+            "Automatic memory management"
+        ],
+        "answer": "Automatic memory management"
+    },
+    {
+        "topic": "Inheritance",
+        "question": "What type of inheritance allows a derived class to inherit from more than one base class?",
+        "options": [
+            "Single inheritance",
+            "Multilevel inheritance",
+            "Multiple inheritance",
+            "Hierarchical inheritance"
+        ],
+        "answer": "Multiple inheritance"
+    },
+    {
+        "topic": "Templates",
+        "question": "What is the purpose of templates in C++?",
+        "options": [
+            "To define functions and classes that can operate with any data type.",
+            "To define macros for string manipulation.",
+            "To enforce encapsulation.",
+            "To create a copy of objects."
+        ],
+        "answer": "To define functions and classes that can operate with any data type."
+    },
+    {
+        "topic": "File I/O",
+        "question": "Which of the following is used to read from a file in C++?",
+        "options": [
+            "ifstream",
+            "ofstream",
+            "fstream",
+            "iostream"
+        ],
+        "answer": "ifstream"
+    },
+    {
+        "topic": "Error Handling",
+        "question": "Which of the following is true about exception handling in C++?",
+        "options": [
+            "Exceptions must always be handled in a catch block.",
+            "C++ does not support exception handling.",
+            "The 'try' block is followed by one or more 'catch' blocks.",
+            "Exceptions are caught using the 'finally' block."
+        ],
+        "answer": "The 'try' block is followed by one or more 'catch' blocks."
+    },
+    {
+        "topic": "Standard Template Library (STL)",
+        "question": "Which of the following STL containers store elements in a key-value pair?",
+        "options": [
+            "vector",
+            "deque",
+            "map",
+            "list"
+        ],
+        "answer": "map"
+    },
+    {
+        "topic": "Multithreading",
+        "question": "Which library is commonly used to work with threads in C++?",
+        "options": [
+            "threading",
+            "pthread",
+            "threads.h",
+            "chrono"
+        ],
+        "answer": "pthread"
+    },
+    {
+        "topic": "Memory Management",
+        "question": "Which of the following is used for dynamic memory allocation in C++?",
+        "options": [
+            "malloc()",
+            "new",
+            "alloc()",
+            "calloc()"
+        ],
+        "answer": "new"
+    }
+]

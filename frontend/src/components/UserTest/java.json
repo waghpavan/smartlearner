@@ -1,0 +1,167 @@
+[
+    {
+        "topic": "Java Basics",
+        "question": "Which of the following is used to declare a constant in Java?",
+        "options": [
+            "final",
+            "static",
+            "const",
+            "define"
+        ],
+        "answer": "final"
+    },
+    {
+        "topic": "Java Object-Oriented Programming (OOP)",
+        "question": "Which of the following is NOT a feature of OOP in Java?",
+        "options": [
+            "Polymorphism",
+            "Inheritance",
+            "Encapsulation",
+            "Compilation"
+        ],
+        "answer": "Compilation"
+    },
+    {
+        "topic": "Java Basics Continued",
+        "question": "Which of the following is NOT a primitive data type in Java?",
+        "options": [
+            "int",
+            "boolean",
+            "String",
+            "float"
+        ],
+        "answer": "String"
+    },
+    {
+        "topic": "Java Exception Handling",
+        "question": "Which of the following keywords is used to manually throw an exception in Java?",
+        "options": [
+            "throws",
+            "catch",
+            "throw",
+            "finally"
+        ],
+        "answer": "throw"
+    },
+    {
+        "topic": "Java Collections Framework",
+        "question": "Which of the following is an interface in the Java Collections Framework?",
+        "options": [
+            "ArrayList",
+            "HashMap",
+            "List",
+            "TreeSet"
+        ],
+        "answer": "List"
+    },
+    {
+        "topic": "Java Generics",
+        "question": "What is the primary purpose of using generics in Java?",
+        "options": [
+            "To increase code readability",
+            "To improve performance",
+            "To enable code reusability and type safety",
+            "To allow for multi-threading"
+        ],
+        "answer": "To enable code reusability and type safety"
+    },
+    {
+        "topic": "Java Streams and Lambda Expressions",
+        "question": "Which of the following is a valid way to create a stream in Java?",
+        "options": [
+            "Stream.of()",
+            "Stream.new()",
+            "Stream.create()",
+            "Stream.get()"
+        ],
+        "answer": "Stream.of()"
+    },
+    {
+        "topic": "Java File I/O (Input/Output)",
+        "question": "Which class in Java is used for reading characters from a file?",
+        "options": [
+            "FileReader",
+            "FileInputStream",
+            "FileWriter",
+            "Scanner"
+        ],
+        "answer": "FileReader"
+    },
+    {
+        "topic": "Java 8+ Features",
+        "question": "Which of the following features was introduced in Java 8?",
+        "options": [
+            "Lambda expressions",
+            "Multithreading",
+            "Exception handling",
+            "Generics"
+        ],
+        "answer": "Lambda expressions"
+    },
+    {
+        "topic": "Java Memory Management",
+        "question": "Which part of Java memory is used to store objects?",
+        "options": [
+            "Heap",
+            "Stack",
+            "Registers",
+            "Cache"
+        ],
+        "answer": "Heap"
+    },
+    {
+        "topic": "Java Networking",
+        "question": "Which class is used in Java to create a server socket?",
+        "options": [
+            "ServerSocket",
+            "Socket",
+            "InetAddress",
+            "HttpServer"
+        ],
+        "answer": "ServerSocket"
+    },
+    {
+        "topic": "Java Multithreading and Concurrency",
+        "question": "Which method in Java is used to put a thread to sleep?",
+        "options": [
+            "wait()",
+            "pause()",
+            "sleep()",
+            "halt()"
+        ],
+        "answer": "sleep()"
+    },
+    {
+        "topic": "Java Reflection",
+        "question": "What is the purpose of reflection in Java?",
+        "options": [
+            "To change the value of a constant",
+            "To dynamically inspect and modify the behavior of classes at runtime",
+            "To handle exceptions",
+            "To manage memory"
+        ],
+        "answer": "To dynamically inspect and modify the behavior of classes at runtime"
+    },
+    {
+        "topic": "Java Design Patterns",
+        "question": "Which design pattern ensures a class has only one instance and provides a global point of access to it?",
+        "options": [
+            "Singleton",
+            "Factory",
+            "Observer",
+            "Builder"
+        ],
+        "answer": "Singleton"
+    },
+    {
+        "topic": "Java Virtual Machine (JVM) and Performance Tuning",
+        "question": "Which of the following is a tool used for JVM performance tuning?",
+        "options": [
+            "Garbage Collector",
+            "JVM Profiler",
+            "Heap Analyzer",
+            "Thread Manager"
+        ],
+        "answer": "JVM Profiler"
+    }
+]
