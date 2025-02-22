@@ -1,6 +1,5 @@
     const router = require("express").Router();
     const User = require("../models/users");
-    const bcrypt = require("bcrypt"); 
 
     // POST create a new user
     router.post('/signup', async (req, res) => {
@@ -18,13 +17,12 @@
                 return res.status(400).json({ message: "User already exists with this email" });
             }
 
-            // Hash the password before saving
-            const hashedPassword = await bcrypt.hash(password, 10); // Hashing with a salt rounds of 10
+            
 
             const newUser = new User({
                 email,
                 username,
-                password: hashedPassword, // Store the hashed password
+                password,
                 courses
             });
 
@@ -48,7 +46,7 @@
             }
 
             // Compare the password with the hashed password
-            const isMatch = await bcrypt.compare(password, user.password);
+            const isMatch = password === user.password;
             if (!isMatch) {
                 return res.status(401).json({ message: "Invalid credentials" });
             }

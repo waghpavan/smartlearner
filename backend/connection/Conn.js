@@ -1,9 +1,8 @@
-// connection/Conn.js
 const mongoose = require("mongoose");
 
 const connectDB = async () => {
     try {
-        await mongoose.connect("mongodb://localhost:27017/Smart", {
+        await mongoose.connect("mongodb+srv://smart:smart123@smart.asgqh.mongodb.net/", {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
