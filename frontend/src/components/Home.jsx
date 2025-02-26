@@ -6,6 +6,7 @@ import cplus from './assets/cplus.jpg'
 import { useNavigate } from 'react-router-dom'
 function Home() {
     const navigator = useNavigate();
+    
     return (
         <div>
             <main className="px-48 text-black">

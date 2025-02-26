@@ -27,7 +27,7 @@ function SignUp() {
         e.preventDefault(); // Prevent the default form submission
 
         try {
-            const response = await axios.post('http://localhost:8000/api/v1/signup', {
+            const response = await axios.post(`${process.env.REACT_APP_BACKEND}/api/v1/signup`, {
                 email: inputs.email,
                 username: inputs.username,
                 password: inputs.password,

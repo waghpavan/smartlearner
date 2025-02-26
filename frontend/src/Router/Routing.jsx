@@ -1,6 +1,8 @@
 import React from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
+import Navbar from '../components/Navbar'
+
 import Home from '../components/Home'
 import Dashboard from '../components/Dashboard/Dashboard'
 import Courses from '../components/Courses/Courses'
@@ -10,10 +12,13 @@ import UserTest from '../components/UserTest/UserTest'
 import Login from '../components/Login/Login'
 import SignUp from '../components/SignUp/SignUp'
 
+import Footer from '../components/Footer'
+
 function Routing() {
   return (
     <div>
       <BrowserRouter>
+        <Navbar/>
         <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/Dashboard/:courseId' element={<Dashboard/>}/>
@@ -24,6 +29,7 @@ function Routing() {
             <Route path='/Login' element={<Login/>}/>
             <Route path='/SignUp' element={<SignUp/>}/>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   )

@@ -46,14 +46,12 @@
             }
 
             // Compare the password with the hashed password
-            const isMatch = password === user.password;
+            const isMatch = password == user.password;
             if (!isMatch) {
                 return res.status(401).json({ message: "Invalid credentials" });
             }
 
-            // If login is successful, return user data (excluding password)
-            const { password: userPassword, ...userData } = user._doc; // Exclude password from the response
-            res.status(200).json({ message: "Login successful", user: userData });
+            res.status(200).json({ message: "Login successful", user: user });
         } catch (error) {
             res.status(500).json({ message: "Error logging in", error: error.message });
         }

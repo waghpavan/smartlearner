@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios';
 import Content from '../Content/Content'
+
   
   function Sidebar({courseId}) {
     
@@ -12,7 +13,7 @@ import Content from '../Content/Content'
       const fetchCourseContent = async () => {
           try {
               // Make a GET request to fetch only the content of the course
-              const response = await axios.get(`http://localhost:8000/api/v2/get-course/${courseId}`);
+              const response = await axios.get(`${process.env.REACT_APP_BACKEND}/api/v2/get-course/${courseId}`);
               let temp = response.data; // Set the content data to state
               setMistake(temp['mistake']);
               setContent(temp['content']);

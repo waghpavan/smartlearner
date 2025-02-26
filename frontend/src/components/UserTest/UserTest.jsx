@@ -53,7 +53,7 @@ const UserTest = () => {
     setContent(data[test].content);
 
     try {
-      const response = await axios.post('http://localhost:8000/api/v2/create-course', {
+      const response = await axios.post(`${process.env.BACKEND}/api/v2/create-course`, {
         name,
         title,
         description,

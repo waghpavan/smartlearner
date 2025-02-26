@@ -29,7 +29,7 @@ function Login() {
         e.preventDefault(); // Prevent the default form submission
 
         try {
-            const response = await axios.post('http://localhost:8000/api/v1/login', {
+            const response = await axios.post(`${process.env.REACT_APP_BACKEND}/api/v1/login`, {
                 email: inputs.email,
                 password: inputs.password,
             });
@@ -41,6 +41,7 @@ function Login() {
             sessionStorage.setItem("Id" ,response.data.user._id)
             navigate('/Courses'); // Redirect to the dashboard after successful login
         } catch (error) {
+            console.log(error.message);
             const errorMessage = error.response?.data?.message || 'An error occurred';
             toast.error(errorMessage); // Show error notification
         }
